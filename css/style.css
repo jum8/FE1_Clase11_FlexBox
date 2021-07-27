@@ -7,21 +7,59 @@
 header{
     background-color: black;
 }
-.menu{
+.menuTop{
     color: white;
+    display: flex;
+    /* position: absolute; */
+    /* left: 100px; */
+
+}
+.menuBottom{
+    color: white;
+    display: flex;
+
 }
 
 footer{
     background-color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
+
 
 .padre{
     display: flex;
     justify-content: space-around;
+    padding: 35px 19px;
+
 }
 
 .delivery{
-    background-image: url('../img/delivery@2x.png');
-    height: 500px;
-    width: 500px;
+    background-image: url('../img/delivery.jpg');
+    width: 490px;
+    height: 350px;
+    padding: 20px;
+}
+
+.Podio{
+    width: 490px;
+    height: 350px;
+    padding: 20px;
+}
+
+#tiposPizza{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#tituloPodio{
+    color: #FC200C;
+    text-align: center;
+}
+
+#listaPizzas{
+    line-height: 30px;
 }
