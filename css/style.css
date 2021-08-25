@@ -4,28 +4,68 @@
     margin: 0;
 }
 
+html{
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header{
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
 .menuTop{
     color: white;
-    display: flex;
-    /* position: absolute; */
-    /* left: 100px; */
-
+    list-style-type: none;
+    padding: 20px 0px;
 }
-.menuBottom{
+
+.menuTop li, .menuBottom li{
+    display: inline-block;
+    padding: 10px;
+}
+
+li a{
+    text-decoration: none;
     color: white;
+}
+
+main{
+    align-items: center;
+    background-color: #E5E5E5;
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
+}
+
+.menuBottom{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style-type: none;
+    padding: 20px 0px;
 
 }
 
 footer{
     background-color: black;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 15px;
 }
 
 
@@ -33,7 +73,14 @@ footer{
     display: flex;
     justify-content: space-around;
     padding: 35px 19px;
+}
 
+main section article h2{
+    color: white;
+}
+
+main section article h2 .vivid-color{
+    color: #FC200C;
 }
 
 .delivery{
@@ -44,6 +91,7 @@ footer{
 }
 
 .Podio{
+    background-color: white;
     width: 490px;
     height: 350px;
     padding: 20px;
